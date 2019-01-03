@@ -25,9 +25,7 @@
 
     <work-experience
       v-for="exp in exps"
-      v-bind:company="exp.company"
-      v-bind:start="exp.start"
-      v-bind:finish="exp.finish"
+      v-bind="exp"
     ></work-experience>
 
     <h2>Human Languages</h2>

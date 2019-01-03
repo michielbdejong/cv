@@ -1,6 +1,6 @@
 Vue.component('work-experience', {
-  props: ['company', 'start', 'finish' ],
-  template: '<div>Worked at {{ company }} from {{ start }}  to {{ finish }}.</div>'
+  props: ['company', 'start', 'finish', 'logo' ],
+  template: '<div><img v-bind:src="logo" width="40" height="40"></img> Worked at {{ company }} from {{ start }}  to {{ finish }}.</div>'
 });
 
 const exp = {
@@ -9,6 +9,7 @@ const exp = {
     project: 'Interledger',
     jobTitle: 'Software Engineer',
     href: 'https://ripple.com',
+    logo: 'https://pbs.twimg.com/profile_images/879392946730094592/IwNebNtK_400x400.jpg',
     description: 'Helped define and implement the <a href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
     start: 'Feb 2017',
     finish: 'Nov 2018',
@@ -18,6 +19,7 @@ const exp = {
     start: 'Oct 2016',
     finish: 'present',
     href: 'https://ledgerloops.com',
+    logo: 'https://pbs.twimg.com/profile_images/792930018171039744/niPr0qoi_400x400.jpg',
     description: 'LedgerLoops is an alternative to money, based around a novel concept: cryptographically triggered IOUs. The website (<a href="https://ledgerloops.com/">ledgerloops.com</a>) introduces the "Whispering Merchants" problem as an abstraction of trade flows in the real world. It explains how LedgerLoops is a more decentralized solution than money, requiring everybody only to trust their immediate economic neighbors. The whitepaper defines the LedgerLoops protocol, and an implementation in Node.js is currently in the making.',
   },
   mozilla: {
@@ -27,6 +29,7 @@ const exp = {
     start: 'Aug 2015',
     finish: 'Jul 2016',
     href: 'https://mozilla.org',
+    logo: 'https://pbs.twimg.com/profile_images/3316021015/01faa970c0f601e38972a0e4866b026b_400x400.png',
     description: 'Data sync for Firefox OS. Our agile team implemented a server in Python (Pyramid framework), and a client in JavaScript (the Firefox OS phone does not support Python). The goal was to synchronize bookmarks, photos, contacts, etc. in a decentralized way.',
   },
   indiehosters: {
@@ -35,6 +38,7 @@ const exp = {
     start: 'Oct 2014',
     finish: 'Jun 2015',
     href: 'https://indie.host',
+    logo: 'https://pbs.twimg.com/profile_images/523115805332885505/BpfLeuTl_400x400.png',
     description: 'Docker-based hosting for end-users, with the aim to help decentralize the web. Our two-man project made it onto the frontpage of Wired.com.',
   },
   tosdr: {
@@ -43,6 +47,7 @@ const exp = {
     finish: 'present',
     jobTitle: 'Tech Lead',
     href: 'https://tosdr.org',
+    logo: 'https://pbs.twimg.com/profile_images/2518509425/3c5pvqhpk231uv8sd2uj_400x400.png',
     description: 'Rating the terms of service we all agree to by checking a box when signing up for a web service, but which hardly anybody ever reads. I was interviewed about ToS;DR on National Public Radio (NPR) in the US and our project was featured in quality newspapers like Frankfurter Algemeine (DE) and Le Monde (FR).',
   },
   unhosted: {
@@ -52,6 +57,7 @@ const exp = {
     project: 'remoteStorage',
     jobTitle: 'Founder and Lead',
     href: 'https://unhosted.org',
+    logo: 'https://pbs.twimg.com/profile_images/1571295852/unhosted-logo_400x400.png',
     description: 'Wrote the "<a href="https://unhosted.org/">Unhosted Web Apps</a>" book, led the remoteStorage <a href="https://tools.ietf.org/id/draft-dejong-remotestorage-07">Internet Draft</a> at IETF, and the <a href="https://github.com/remotestorage/remotestorage.js">remotestorage.js</a> library. Highly visible in the web tech community, and awarded several funding grants.',
   },
   tuenti: {
@@ -60,6 +66,7 @@ const exp = {
     finish: 'Feb 2011',
     jobTitle: 'Scalability Engineer',
     href: 'https://tuenti.com',
+    logo: 'https://pbs.twimg.com/profile_images/2387391401/18wscys89og8zaez4rx2_400x400.png',
     description: 'Lead of the "backend for core" agile team, using advanced scalability techniques to make the tuenti.com website reliable and fast on its 1000 servers. While leading the images team, I was responsible for a self-healing Distributed Hash Table containing over a billion photos. We wrote most code in PHP.',
 //
   },
