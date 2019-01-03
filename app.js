@@ -1,8 +1,3 @@
-Vue.component('work-experience', {
-  props: ['company', 'start', 'finish', 'logo' ],
-  template: '<div><img v-bind:src="logo" width="40" height="40"></img> Worked at {{ company }} from {{ start }}  to {{ finish }}.</div>'
-});
-
 const exp = {
   ripple: {
     company: 'Ripple',
@@ -207,7 +202,7 @@ const focus = {
   ],
 };
 
-new Vue({
+const app = new Vue({
   el: '#cv',
   data: {
     sections: focus.development,
