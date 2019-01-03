@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CV - Michiel B. de Jong</title>
+    <meta name="description" content="CV - Michiel B. de Jong">
+    <link rel="author" href="https://michielbdejong.com/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma.min.css">
+    <script defer src="fontawesome.min.js"></script>
+    <script src="vue.min.js"></script>
+  </head>
+  <body>
+    <div id="cv">
+    <p class="P2">Michiel Bertus de Jong</p>
+    <p class="P2"> </p> <p class="P2"> </p> <p class="P2"> </p> <p class="P2"> </p>
+    <p class="P2">21/07/1975, The Netherlands</p>
+    <p class="P2"><a href="https://michielbdejong.com/">michielbdejong.com</a></p>
+    <p class="P2">michiel@unhosted.org</p>
+    <p class="P2"></p> <p class="P2"></p>
+    <p class="P2"> </p> <p class="P2"> </p>
+    <p class="P2"> </p> <p class="P2"> </p>
+    <p class="P2"><i>Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.</i></p>
+    <p class="P2"> </p> <p class="P2"> </p> <p class="P2"> </p> <p class="P2"> </p>
+
+    <work-experience
+      v-for="exp in exps"
+      v-bind:company="exp.company"
+      v-bind:start="exp.start"
+      v-bind:finish="exp.finish"
+    ></work-experience>
+
+    <h2>Human Languages</h2>
+    <h2>Programming Languages</h2>
+
+    </div><!-- close vue app -->
+    <script src="app.js"></script>
+  </body>
+</html>
