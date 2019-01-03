@@ -210,6 +210,6 @@ const focus = {
 new Vue({
   el: '#cv',
   data: {
-    exps: focus.development[0].exps,
+    sections: focus.development,
   },
 });
