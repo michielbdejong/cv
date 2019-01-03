@@ -29,9 +29,12 @@
 
     </div><!-- close vue app -->
     <script>
+      const expFigureTemplate = '<figure class="media-left"><p class="image is-64x64"><img v-bind:src="logo"></p></figure>';
+      const expContentTemplate = '<div class="media-content"> <span class="has-text-weight-bold">{{ company }}</span> <span class="is-italic">({{ start }}  - {{ finish }})</span> {{ description  }}</p>';
+      const expTemplate = '<div class="media">' +  expFigureTemplate + expContentTemplate + '</div';
       Vue.component('work-experience', {
         props: ['company', 'start', 'finish', 'logo', 'description' ],
-        template: '<div><img v-bind:src="logo" width="40" height="40"></img> <span class="title">{{ company }}</span>{{ description  }} ({{ start }}  - {{ finish }})</div>'
+        template: expTemplate,
       });
     </script>
     <script src="app.js"></script>
