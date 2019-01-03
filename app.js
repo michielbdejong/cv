@@ -202,9 +202,17 @@ const focus = {
   ],
 };
 
+const hashParts = window.location.hash.split('=');
+let focusName = 'protocols';
+if (hashParts[0]=='#focus') {
+  focusName = hashParts[1];
+} else {
+  window.location = '#focus=protocols';
+}
+
 const app = new Vue({
   el: '#cv',
   data: {
-    sections: focus.development,
+    sections: focus[focusName],
   },
 });
