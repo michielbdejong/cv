@@ -63,13 +63,13 @@ const exp = {
     href: 'https://tuenti.com',
     logo: 'https://pbs.twimg.com/profile_images/2387391401/18wscys89og8zaez4rx2_400x400.png',
     description: 'Lead of the "backend for core" agile team, using advanced scalability techniques to make the tuenti.com website reliable and fast on its 1000 servers. While leading the images team, I was responsible for a self-healing Distributed Hash Table containing over a billion photos. We wrote most code in PHP.',
-//
   },
   kibitech: {
     company: 'Kibitech',
     start: 'Oct 2008',
     finish: 'Apr 2009',
     href: 'http://www.kibitechnologies.com/about-us.html',
+    logo: 'noun_Work_21484.png',
     jobTitle: 'Software Team Leader',
     description:  'I was the director of the C++ development department, and in charge of a team of eight engineers. My work consisted of the development of a system of TV2.0 in dedicated hardware. Our in-house viewer was the world\'s best at streaming video with SVG animations.',
   },
@@ -78,6 +78,7 @@ const exp = {
     start: 'Apr 2007',
     finish: 'Sep 2008',
     href: 'http://www.by.com.es',
+    logo: 'noun_Work_21484.png',
     jobTitle: 'Bank Security',
     description: 'Person in charge of all in-house software development, related to physical security in banks (time-delayed safes, access control, ATMs, fingerprint readers, license plate scanners). Using embedded microprocessors and developing algorithms that work in real time with hardware. We developed mostly in C#.',
   },
@@ -86,6 +87,7 @@ const exp = {
     start: 'Nov 2005',
     finish: 'Apr 2007',
     href: 'http://www.grupoteva.com',
+    logo: 'noun_Work_21484.png',
     jobTitle: 'Director of R&amp;D',
     description: 'Responsible for the development and production of all high tech products (traffic cameras, license plate readers, etc.). I mainly wrote in C/C++.'
   },
@@ -94,59 +96,70 @@ const exp = {
     start: 'Nov 2002',
     finish: 'Nov 2005',
     href: 'https://hostway.com',
+    logo: 'noun_Work_21484.png',
     jobTitle: 'Senior Sys Admin',
     description: 'Engineer and senior architect of Web servers and server clusters. Promoted main engineer in linux, and one of the 3 main engineers in Windows. I was responsible to maintain 200 linux servers and 100 virtual private servers, that contain 5,000 Web sites and support the email for 10,000 companies. All automation was done entirely with Python scripts.',
   },
   cwi: {
-    years: '1999 - 2001',
-    institute: 'CWI Institute',
-    location: 'Amsterdam',
-    activity: 'PhD research (A.I.)',
+    start: '1999',
+    finish: '2001',
+    company: 'CWI Institute (Amsterdam)',
+    description: 'PhD research (A.I.)',
+    logo: 'noun_Work_21484.png',
   },
   leiden: {
-    years: '1994 - 1998',
-    institute: 'Leiden University',
-    activity: 'MSc degree (Computer Science)',
+    start: '1994',
+    finish: '1998',
+    company: 'Leiden University',
+    description: 'MSc degree (Computer Science)',
+    logo: 'noun_Work_21484.png',
   },
   oxford: {
-    years: '1998 - 1999',
-    institute: 'Oxford University',
-    location:  'Oxford, England',
-    activity:  'R&amp;D engineer',
-    description: 'Software Engineer. Low-level programming in Windows, DirectX, high-performance timing and graphics. Working on two scientific projects.',
+    start: '1998',
+    finish: '1999',
+    company: 'Oxford University (Oxford, England)',
+    description:  'R&D engineer',
+    // description: 'Software Engineer. Low-level programming in Windows, DirectX, high-performance timing and graphics. Working on two scientific projects.',
+    logo: 'noun_Work_21484.png',
   },
   twente: {
-    years: '1993 - 1994',
-    institute: 'Twente University',
-    activity: 'Electronic Engineering',
+    start: '1993',
+    finish: '1994',
+    company: 'Twente University',
+    description: 'Electronic Engineering',
+    logo: 'noun_Work_21484.png',
   },
 };
 
 const humanLang = [ {
   name: 'Dutch',
+  flag: 'https://flags.fmcdn.net/data/flags/w580/nl.png',
 }, {
   name: 'English',
+  flag: 'https://flags.fmcdn.net/data/flags/w580/gb.png',
 }, {
   name: 'Spanish', 
+  flag: 'https://flags.fmcdn.net/data/flags/w580/es.png',
 }, {
   name: 'German', 
+  flag: 'https://flags.fmcdn.net/data/flags/w580/de.png',
 }, {
   name: 'French',
+  flag: 'https://flags.fmcdn.net/data/flags/w580/fr.png',
 }, {
   name: 'Indonesian',
+  flag: 'https://flags.fmcdn.net/data/flags/w580/id.png',
 } ];
 
-const progLang = [ {
-  name: 'JavaScript',
-}, {
-  name: 'Java',
-}, {
-  name: 'PHP', 
-}, {
-  name: 'C/C++/C#', 
-}, {
-  name: 'Pascal/Delphi', 
-} ];
+const progLang = 'Over the past 20 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Ruby, JavaScript, and Go.';
+
+const hobbies = 'In my spare time, I love playing Chopin on the piano, squash with friends, or hide-and-seek with my one-year-old son';
+const details = {
+  fullName: 'Michiel Bertus de Jong',
+  born: '21/07/1975, The Netherlands',
+  website: 'https://michielbdejong.com',
+  email: 'michiel@unhosted.org',
+};
 
 const vueData = {
   protocols: {
@@ -166,24 +179,32 @@ const vueData = {
         exps: [ exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
       }
     ],
+    details,
+    humanLang,
+    progLang,
+    hobbies,
   },
   cloud: {
     blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
     sections: [
-       {
-         section: 'Decentralized Internet',
-         exps: [ exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
-       }, {
-         section: 'PHP Development',
-         exps: [ exp.tuenti, exp.hostway ],
-       }, {
-         section: 'Academic',
-         exps: [ exp.cwi, exp.oxford, exp.leiden ],
-       }, {
-         section: 'Other',
-         exps: [ exp.ripple, exp.ledgerloops, exp.kibitech, exp.bytech, exp.teva, ],
-       }
-     ],
+      {
+        section: 'Decentralized Internet',
+        exps: [ exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
+      }, {
+        section: 'PHP Development',
+        exps: [ exp.tuenti, exp.hostway ],
+      }, {
+        section: 'Academic',
+        exps: [ exp.cwi, exp.oxford, exp.leiden ],
+      }, {
+        section: 'Other',
+        exps: [ exp.ripple, exp.ledgerloops, exp.kibitech, exp.bytech, exp.teva, ],
+      }
+    ],
+    details,
+    humanLang,
+    progLang,
+    hobbies,
   },
   backend: {
     blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
@@ -199,6 +220,10 @@ const vueData = {
         exps: [ exp.cwi, exp.oxford, exp.leiden ],
       }
     ],
+    details,
+    humanLang,
+    progLang,
+    hobbies,
   },
   development: {
     blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
@@ -211,6 +236,10 @@ const vueData = {
         exps: [ exp.cwi, exp.oxford, exp.leiden ],
       }
     ],
+    details,
+    humanLang,
+    progLang,
+    hobbies,
   },
 };
 
