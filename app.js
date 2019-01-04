@@ -148,58 +148,70 @@ const progLang = [ {
   name: 'Pascal/Delphi', 
 } ];
 
-const focus = {
-  protocols: [
-    {
-      section: 'Decentralized Protocol Design',
-      exps: [ exp.ripple, exp.unhosted, exp.ledgerloops ],
-    }, {
-      section: 'Rethinking the Internet',
-      exps: [ exp.mozilla, exp.indiehosters, exp.tosdr ],
-    }, {
-      section: 'Academic (CS/AI)',
-      exps: [ exp.cwi, exp.oxford, exp.leiden ],
-    }, {
-      section: 'Other',
-      exps: [ exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
-    }
-  ],
-  cloud: [
-    {
-      section: 'Decentralized Internet',
-      exps: [ exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
-    }, {
-      section: 'PHP Development',
-      exps: [ exp.tuenti, exp.hostway ],
-    }, {
-      section: 'Academic',
-      exps: [ exp.cwi, exp.oxford, exp.leiden ],
-    }, {
-      section: 'Other',
-      exps: [ exp.ripple, exp.ledgerloops, exp.kibitech, exp.bytech, exp.teva, ],
-    }
-  ],
-  backend: [
-    {
-      section: 'Scalability',
-      exps: [ exp.tuenti, exp.indiehosters, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
-    }, {
-      section: 'Open Source',
-      exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.tosdr ],
-    }, {
-      section: 'Computer Science and Artificial Intelligence',
-      exps: [ exp.cwi, exp.oxford, exp.leiden ],
-    }
-  ],
-  development: [
-    {
-      section: 'Software Development, Internet Technology, Open Source',
-      exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.indiehosters, exp.tosdr, exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
-    }, {
-      section: 'Academic, Computer Science and Artificial Intelligence',
-      exps: [ exp.cwi, exp.oxford, exp.leiden ],
-    }
-  ],
+const vueData = {
+  protocols: {
+    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    sections: [
+      {
+        section: 'Decentralized Protocol Design',
+        exps: [ exp.ripple, exp.unhosted, exp.ledgerloops ],
+      }, {
+        section: 'Rethinking the Internet',
+        exps: [ exp.mozilla, exp.indiehosters, exp.tosdr ],
+      }, {
+        section: 'Academic (CS/AI)',
+        exps: [ exp.cwi, exp.oxford, exp.leiden ],
+      }, {
+        section: 'Other',
+        exps: [ exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
+      }
+    ],
+  },
+  cloud: {
+    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    sections: [
+       {
+         section: 'Decentralized Internet',
+         exps: [ exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
+       }, {
+         section: 'PHP Development',
+         exps: [ exp.tuenti, exp.hostway ],
+       }, {
+         section: 'Academic',
+         exps: [ exp.cwi, exp.oxford, exp.leiden ],
+       }, {
+         section: 'Other',
+         exps: [ exp.ripple, exp.ledgerloops, exp.kibitech, exp.bytech, exp.teva, ],
+       }
+     ],
+  },
+  backend: {
+    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    sections: [
+      {
+        section: 'Scalability',
+        exps: [ exp.tuenti, exp.indiehosters, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
+      }, {
+        section: 'Open Source',
+        exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.tosdr ],
+      }, {
+        section: 'Computer Science and Artificial Intelligence',
+        exps: [ exp.cwi, exp.oxford, exp.leiden ],
+      }
+    ],
+  },
+  development: {
+    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    sections: [
+      {
+        section: 'Software Development, Internet Technology, Open Source',
+        exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.indiehosters, exp.tosdr, exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
+      }, {
+        section: 'Academic, Computer Science and Artificial Intelligence',
+        exps: [ exp.cwi, exp.oxford, exp.leiden ],
+      }
+    ],
+  },
 };
 
 const hashParts = window.location.hash.split('=');
@@ -212,7 +224,5 @@ if (hashParts[0]=='#focus') {
 
 const app = new Vue({
   el: '#cv',
-  data: {
-    sections: focus[focusName],
-  },
+  data: vueData[focusName],
 });
