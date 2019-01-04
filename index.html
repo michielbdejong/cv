@@ -35,26 +35,10 @@
       </div>
     </div>
 
-    <div class="hero">
-      <div class="hero-body is-fluid">
-        <h1 class="title">Human Languages</h2>
-        <div class="columns">
-          <human-language v-for="lang in humanLang" v-bind="lang">
-          </human-language>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero">
-      <div class="hero-body is-fluid">
-        <h1 class="title">Programming Languages</h2>
-        <p>{{ progLang }}
-      </div>
-    </div>
-
-    <div class="hero">
-      <div class="hero-body is-fluid">
-        <h1 class="title">Hobbies</h2>
+    <section class="hero">
+      <div class="hero-body">
+        <p>{{ humanLang }}</p>
+        <p>{{ progLang }}</p>
         <p>{{ hobbies }}</p>
       </div>
     </div>

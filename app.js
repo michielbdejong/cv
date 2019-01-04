@@ -5,7 +5,7 @@ const exp = {
     jobTitle: 'Software Engineer',
     href: 'https://ripple.com',
     logo: 'https://pbs.twimg.com/profile_images/879392946730094592/IwNebNtK_400x400.jpg',
-    description: 'Helped define and implement the <a href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
+    description: 'Helped define and implement the Interledger protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
     start: 'Feb 2017',
     finish: 'Nov 2018',
   },
@@ -15,7 +15,7 @@ const exp = {
     finish: 'present',
     href: 'https://ledgerloops.com',
     logo: 'https://pbs.twimg.com/profile_images/792930018171039744/niPr0qoi_400x400.jpg',
-    description: 'LedgerLoops is an alternative to money, based around a novel concept: cryptographically triggered IOUs. The website (<a href="https://ledgerloops.com/">ledgerloops.com</a>) introduces the "Whispering Merchants" problem as an abstraction of trade flows in the real world. It explains how LedgerLoops is a more decentralized solution than money, requiring everybody only to trust their immediate economic neighbors. The whitepaper defines the LedgerLoops protocol, and an implementation in Node.js is currently in the making.',
+    description: 'LedgerLoops is an alternative to money, based around a novel concept: cryptographically triggered IOUs. The website (ledgerloops.com) introduces the "Whispering Merchants" problem as an abstraction of trade flows in the real world. It explains how LedgerLoops is a more decentralized solution than money, requiring everybody only to trust their immediate economic neighbors. The whitepaper defines the LedgerLoops protocol, and an implementation in Node.js is currently in the making.',
   },
   mozilla: {
     company: 'Mozilla',
@@ -25,7 +25,7 @@ const exp = {
     finish: 'Jul 2016',
     href: 'https://mozilla.org',
     logo: 'https://pbs.twimg.com/profile_images/3316021015/01faa970c0f601e38972a0e4866b026b_400x400.png',
-    description: 'Data sync for Firefox OS. Our agile team implemented a server in Python (Pyramid framework), and a client in JavaScript (the Firefox OS phone does not support Python). The goal was to synchronize bookmarks, photos, contacts, etc. in a decentralized way.',
+    description: 'Data sync for Firefox OS. Our agile team implemented a server in Python (Pyramid framework), and a client in JavaScript. The goal was to synchronize bookmarks, photos, contacts, etc. in a decentralized way.',
   },
   indiehosters: {
     company: 'IndieHosters',
@@ -53,7 +53,7 @@ const exp = {
     jobTitle: 'Founder and Lead',
     href: 'https://unhosted.org',
     logo: 'https://pbs.twimg.com/profile_images/1571295852/unhosted-logo_400x400.png',
-    description: 'Wrote the "<a href="https://unhosted.org/">Unhosted Web Apps</a>" book, led the remoteStorage <a href="https://tools.ietf.org/id/draft-dejong-remotestorage-07">Internet Draft</a> at IETF, and the <a href="https://github.com/remotestorage/remotestorage.js">remotestorage.js</a> library. Highly visible in the web tech community, and awarded several funding grants.',
+    description: 'Wrote the "Unhosted Web Apps" book, led the remoteStorage Internet Draft at IETF, and the remotestorage.js library. Highly visible in the web tech community, and awarded several funding grants.',
   },
   tuenti: {
     company: 'Tuenti',
@@ -69,7 +69,7 @@ const exp = {
     start: 'Oct 2008',
     finish: 'Apr 2009',
     href: 'http://www.kibitechnologies.com/about-us.html',
-    logo: 'noun_Work_21484.png',
+    logo: 'http://www.kibitech.com/images/yootheme/logo.svg',
     jobTitle: 'Software Team Leader',
     description:  'I was the director of the C++ development department, and in charge of a team of eight engineers. My work consisted of the development of a system of TV2.0 in dedicated hardware. Our in-house viewer was the world\'s best at streaming video with SVG animations.',
   },
@@ -78,7 +78,7 @@ const exp = {
     start: 'Apr 2007',
     finish: 'Sep 2008',
     href: 'http://www.by.com.es',
-    logo: 'noun_Work_21484.png',
+    logo: 'https://www.by.com.es/wp-content/themes/by/images-web/by-logo-home.svg',
     jobTitle: 'Bank Security',
     description: 'Person in charge of all in-house software development, related to physical security in banks (time-delayed safes, access control, ATMs, fingerprint readers, license plate scanners). Using embedded microprocessors and developing algorithms that work in real time with hardware. We developed mostly in C#.',
   },
@@ -87,7 +87,7 @@ const exp = {
     start: 'Nov 2005',
     finish: 'Apr 2007',
     href: 'http://www.grupoteva.com',
-    logo: 'noun_Work_21484.png',
+    logo: 'http://teva.grupoteva.com/assets/teva/img/teva.png',
     jobTitle: 'Director of R&amp;D',
     description: 'Responsible for the development and production of all high tech products (traffic cameras, license plate readers, etc.). I mainly wrote in C/C++.'
   },
@@ -96,7 +96,7 @@ const exp = {
     start: 'Nov 2002',
     finish: 'Nov 2005',
     href: 'https://hostway.com',
-    logo: 'noun_Work_21484.png',
+    logo: 'https://hostway.com/wp-content/uploads/Hostway-HomeButton-3.png',
     jobTitle: 'Senior Sys Admin',
     description: 'Engineer and senior architect of Web servers and server clusters. Promoted main engineer in linux, and one of the 3 main engineers in Windows. I was responsible to maintain 200 linux servers and 100 virtual private servers, that contain 5,000 Web sites and support the email for 10,000 companies. All automation was done entirely with Python scripts.',
   },
@@ -105,14 +105,12 @@ const exp = {
     finish: '2001',
     company: 'CWI Institute (Amsterdam)',
     description: 'PhD research (A.I.)',
-    logo: 'noun_Work_21484.png',
   },
   leiden: {
     start: '1994',
     finish: '1998',
     company: 'Leiden University',
     description: 'MSc degree (Computer Science)',
-    logo: 'noun_Work_21484.png',
   },
   oxford: {
     start: '1998',
@@ -120,40 +118,39 @@ const exp = {
     company: 'Oxford University (Oxford, England)',
     description:  'R&D engineer',
     // description: 'Software Engineer. Low-level programming in Windows, DirectX, high-performance timing and graphics. Working on two scientific projects.',
-    logo: 'noun_Work_21484.png',
   },
   twente: {
     start: '1993',
     finish: '1994',
     company: 'Twente University',
     description: 'Electronic Engineering',
-    logo: 'noun_Work_21484.png',
   },
 };
 
-const humanLang = [ {
-  name: 'Dutch',
-  flag: 'https://flags.fmcdn.net/data/flags/w580/nl.png',
-}, {
-  name: 'English',
-  flag: 'https://flags.fmcdn.net/data/flags/w580/gb.png',
-}, {
-  name: 'Spanish', 
-  flag: 'https://flags.fmcdn.net/data/flags/w580/es.png',
-}, {
-  name: 'German', 
-  flag: 'https://flags.fmcdn.net/data/flags/w580/de.png',
-}, {
-  name: 'French',
-  flag: 'https://flags.fmcdn.net/data/flags/w580/fr.png',
-}, {
-  name: 'Indonesian',
-  flag: 'https://flags.fmcdn.net/data/flags/w580/id.png',
-} ];
+const humanLang = 'I speak Dutch, English, Spanish, German, French, some Indonesian, and a little bit of sign language.';
+// const humanLang = [ {
+//   name: 'Dutch',
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/nl.png',
+// }, {
+//   name: 'English',
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/gb.png',
+// }, {
+//   name: 'Spanish', 
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/es.png',
+// }, {
+//   name: 'German', 
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/de.png',
+// }, {
+//   name: 'French',
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/fr.png',
+// }, {
+//   name: 'Indonesian',
+//   flag: 'https://flags.fmcdn.net/data/flags/w580/id.png',
+// } ];
 
-const progLang = 'Over the past 20 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Ruby, JavaScript, and Go.';
+const progLang = 'Over the past 25 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Ruby, JavaScript, and Go.';
 
-const hobbies = 'In my spare time, I love playing Chopin on the piano, squash with friends, or hide-and-seek with my one-year-old son';
+const hobbies = 'In my spare time, I love playing Chopin on the piano, squash with friends, or hide-and-seek with my one-year-old son!';
 const details = {
   fullName: 'Michiel Bertus de Jong',
   born: '21/07/1975, The Netherlands',
