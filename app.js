@@ -127,7 +127,7 @@ const exp = {
     description: 'MSc degree (Computer Science)',
 //    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Leiden_University_seal.svg/150px-Leiden_University_seal.svg.png',
 //    style: 'padding:0px',
-    style: 'margin-bottom:-1.5em;',
+    style: 'margin-bottom-1.5em;',
   },
   oxford: {
     start: '1998',
@@ -261,28 +261,38 @@ const vueData = {
   },
 };
 
-// explicit page breaks for pdf printing:
-vueData.backend.sections[0].exps[0].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[0].exps[1].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[0].exps[2].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[0].exps[3].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[0].exps[4].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[0].exps[5].style = 'margin-bottom:1.6em;';
-
-vueData.backend.sections[1].exps[0].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[1].exps[1].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[1].exps[2].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[1].exps[3].style = 'margin-bottom:1.6em;';
-vueData.backend.sections[1].exps[4].style = 'margin-bottom:1.6em;';
-
-vueData.backend.sections[2].exps[2].style = 'margin-bottom:-4em;';
-
 const hashParts = window.location.hash.split('=');
 let focusName = 'protocols';
 if (hashParts[0]=='#focus') {
   focusName = hashParts[1];
 } else {
   window.location = '#focus=protocols';
+}
+
+// explicit page breaks for pdf printing:
+if (focusName == 'backend') {
+  vueData.backend.sections[0].exps[0].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[0].exps[1].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[0].exps[2].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[0].exps[3].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[0].exps[4].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[0].exps[5].style = 'margin-bottom:1.6em;';
+  
+  vueData.backend.sections[1].exps[0].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[1].exps[1].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[1].exps[2].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[1].exps[3].style = 'margin-bottom:1.6em;';
+  vueData.backend.sections[1].exps[4].style = 'margin-bottom:1.6em;';
+  
+  vueData.backend.sections[2].exps[2].style = 'margin-bottom:-4em;';
+} else if (focusName == 'cloud') {
+  vueData.backend.sections[0].exps[0].style = '';
+  vueData.backend.sections[0].exps[1].style = '';
+  vueData.backend.sections[0].exps[2].style = '';
+  vueData.backend.sections[0].exps[3].style = 'margin-bottom:1.6em;';
+
+  vueData.backend.sections[1].exps[0].style = '';
+  vueData.backend.sections[1].exps[1].style = 'margin-bottom:1.6em;';
 }
 
 const app = new Vue({
