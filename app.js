@@ -5,7 +5,7 @@ const exp = {
     jobTitle: 'Software Engineer',
     href: 'https://ripple.com',
     logo: 'https://pbs.twimg.com/profile_images/879392946730094592/IwNebNtK_400x400.jpg',
-    description: 'Helped define and implement the Interledger protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
+    description: 'Helped define and implement the <a :href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
     start: 'Feb 2017',
     finish: 'Nov 2018',
   },
@@ -160,7 +160,7 @@ const details = {
 
 const vueData = {
   protocols: {
-    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    blurb: 'Deep understanding of internet technology and protocol design. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
     sections: [
       {
         section: 'Decentralized Protocol Design',
@@ -182,7 +182,7 @@ const vueData = {
     hobbies,
   },
   cloud: {
-    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    blurb: 'Deep understanding of internet technology and multi-server federation. Critical thinker. Many years of experience developing decentralized, federated and scalable server solutions in an open source culture.',
     sections: [
       {
         section: 'Decentralized Internet',
@@ -204,13 +204,13 @@ const vueData = {
     hobbies,
   },
   backend: {
-    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    blurb: 'Deep understanding of internet technology and server scalability. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
     sections: [
       {
-        section: 'Scalability',
+        section: 'Scalability, High Performance and Hosting',
         exps: [ exp.tuenti, exp.indiehosters, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
       }, {
-        section: 'Open Source',
+        section: 'Open Source and Internet Revolution',
         exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.tosdr ],
       }, {
         section: 'Computer Science and Artificial Intelligence',
@@ -223,7 +223,7 @@ const vueData = {
     hobbies,
   },
   development: {
-    blurb: 'Deep understanding of internet technology and FinTech. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    blurb: 'Deep understanding of internet technology and the open source development process. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
     sections: [
       {
         section: 'Software Development, Internet Technology, Open Source',

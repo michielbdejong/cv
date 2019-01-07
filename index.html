@@ -18,7 +18,21 @@
         <p class="">{{ details.born }}</p>
         <a class="" v-bind:href="details.website">{{ details.website }}</a>
         <p class="">{{ details.email }}</p>
-        <p class=""><i>{{ blurb }}</i></p>
+      </div>
+      <div class="level">
+        <div class="tile is-ancestor">
+          <div class="tile is-2">
+            <!-- empty tile left of blurb -->
+          </div>
+          <div class="tile is-8 has-text-centered">
+            <div class="content">
+              <p class=""><i>{{ blurb }}</i></p>
+            </div>
+          </div>
+          <div class="tile is-2">
+            <!-- empty tile right of blurb -->
+          </div>
+        </div>
       </div>
     </section>
     <div class="container">
@@ -28,8 +42,22 @@
             <h1 class="title">{{ sec.section }}</p>
           </div>
           <div class="container">
-            <work-experience v-for="exp in sec.exps" v-bind="exp">
-            </work-experience>
+            <div v-for="exp in sec.exps" v-bind="exp">
+              <div class="level is-fluid">
+                <div class="media">
+                   <figure class="media-left">
+                     <p class="image is-64x64">
+                       <img v-bind:src="exp.logo">
+                     </p>
+                   </figure>
+                   <div class="media-content">
+                     <span class="has-text-weight-bold">{{ exp.company }}</span>
+                     <span class="is-italic">({{ exp.start }}  - {{ exp.finish }})</span>
+                     <span v-html="exp.description"></span>
+                   </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,13 +78,6 @@
       Vue.component('human-language', {
         props: ['name', 'flag' ],
         template: langTemplate,
-      });
-      const expFigureTemplate = '<figure class="media-left"><p class="image is-64x64"><img v-bind:src="logo"></p></figure>';
-      const expContentTemplate = '<div class="media-content"> <span class="has-text-weight-bold">{{ company }}</span> <span class="is-italic">({{ start }}  - {{ finish }})</span> {{ description  }}</p>';
-      const expTemplate = '<div class="media">' +  expFigureTemplate + expContentTemplate + '</div>';
-      Vue.component('work-experience', {
-        props: ['company', 'start', 'finish', 'logo', 'description' ],
-        template: expTemplate,
       });
     </script>
     <script src="app.js"></script>
