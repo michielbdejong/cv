@@ -5,17 +5,19 @@ const exp = {
     jobTitle: 'Software Engineer',
     href: 'https://ripple.com',
     logo: 'https://pbs.twimg.com/profile_images/879392946730094592/IwNebNtK_400x400.jpg',
-    description: 'Helped define and implement the <a :href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
+    description: 'Helped define and implement the <a href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
     start: 'Feb 2017',
     finish: 'Nov 2018',
+    style: '',
   },
   ledgerloops: {
     company: 'LedgerLoops',
     start: 'Oct 2016',
-    finish: 'present',
+    finish: 'Dec 2018',
     href: 'https://ledgerloops.com',
     logo: 'https://pbs.twimg.com/profile_images/792930018171039744/niPr0qoi_400x400.jpg',
     description: 'LedgerLoops is an alternative to money, based around a novel concept: cryptographically triggered IOUs. The website (ledgerloops.com) introduces the "Whispering Merchants" problem as an abstraction of trade flows in the real world. It explains how LedgerLoops is a more decentralized solution than money, requiring everybody only to trust their immediate economic neighbors. The whitepaper defines the LedgerLoops protocol, and an implementation in Node.js is currently in the making.',
+    style: 'margin-bottom:0.5em;',
   },
   mozilla: {
     company: 'Mozilla',
@@ -26,6 +28,7 @@ const exp = {
     href: 'https://mozilla.org',
     logo: 'https://pbs.twimg.com/profile_images/3316021015/01faa970c0f601e38972a0e4866b026b_400x400.png',
     description: 'Data sync for Firefox OS. Our agile team implemented a server in Python (Pyramid framework), and a client in JavaScript. The goal was to synchronize bookmarks, photos, contacts, etc. in a decentralized way.',
+    style: '',
   },
   indiehosters: {
     company: 'IndieHosters',
@@ -35,6 +38,7 @@ const exp = {
     href: 'https://indie.host',
     logo: 'https://pbs.twimg.com/profile_images/523115805332885505/BpfLeuTl_400x400.png',
     description: 'Docker-based hosting for end-users, with the aim to help decentralize the web. Our two-man project made it onto the frontpage of Wired.com.',
+    style: '',
   },
   tosdr: {
     company: 'Terms of Service; Didn\'t Read',
@@ -44,6 +48,7 @@ const exp = {
     href: 'https://tosdr.org',
     logo: 'https://pbs.twimg.com/profile_images/2518509425/3c5pvqhpk231uv8sd2uj_400x400.png',
     description: 'Rating the terms of service we all agree to by checking a box when signing up for a web service, but which hardly anybody ever reads. I was interviewed about ToS;DR on National Public Radio (NPR) in the US and our project was featured in quality newspapers like Frankfurter Algemeine (DE) and Le Monde (FR).',
+    style: 'margin-bottom:0.5em;',
   },
   unhosted: {
     start: 'Sep 2010',
@@ -53,7 +58,8 @@ const exp = {
     jobTitle: 'Founder and Lead',
     href: 'https://unhosted.org',
     logo: 'https://pbs.twimg.com/profile_images/1571295852/unhosted-logo_400x400.png',
-    description: 'Wrote the "Unhosted Web Apps" book, led the remoteStorage Internet Draft at IETF, and the remotestorage.js library. Highly visible in the web tech community, and awarded several funding grants.',
+    description: 'Wrote the "<a href="https://unhosted.org">Unhosted Web Apps</a>" book, led the <a href="https://datatracker.ietf.org/doc/draft-dejong-remotestorage/">remoteStorage Internet Draft</a> at IETF, and the <a href="https://github.com/remotestorage/remotestorage.js">remotestorage.js library</a>. Highly visible in the web tech community, and awarded several funding grants.',
+    style: '',
   },
   tuenti: {
     company: 'Tuenti',
@@ -63,6 +69,7 @@ const exp = {
     href: 'https://tuenti.com',
     logo: 'https://pbs.twimg.com/profile_images/2387391401/18wscys89og8zaez4rx2_400x400.png',
     description: 'Lead of the "backend for core" agile team, using advanced scalability techniques to make the tuenti.com website reliable and fast on its 1000 servers. While leading the images team, I was responsible for a self-healing Distributed Hash Table containing over a billion photos. We wrote most code in PHP.',
+    style: 'margin-bottom:0.5em;',
   },
   kibitech: {
     company: 'Kibitech',
@@ -72,6 +79,7 @@ const exp = {
     logo: 'http://www.kibitech.com/images/yootheme/logo.svg',
     jobTitle: 'Software Team Leader',
     description:  'I was the director of the C++ development department, and in charge of a team of eight engineers. My work consisted of the development of a system of TV2.0 in dedicated hardware. Our in-house viewer was the world\'s best at streaming video with SVG animations.',
+    style: '',
   },
   bytech: {
     company: 'By TechDesign',
@@ -81,6 +89,7 @@ const exp = {
     logo: 'https://www.by.com.es/wp-content/themes/by/images-web/by-logo-home.svg',
     jobTitle: 'Bank Security',
     description: 'Person in charge of all in-house software development, related to physical security in banks (time-delayed safes, access control, ATMs, fingerprint readers, license plate scanners). Using embedded microprocessors and developing algorithms that work in real time with hardware. We developed mostly in C#.',
+    style: 'margin-bottom:0.5em;',
   },
   teva: {
     company: 'TEVA, S.A.',
@@ -89,7 +98,8 @@ const exp = {
     href: 'http://www.grupoteva.com',
     logo: 'http://teva.grupoteva.com/assets/teva/img/teva.png',
     jobTitle: 'Director of R&amp;D',
-    description: 'Responsible for the development and production of all high tech products (traffic cameras, license plate readers, etc.). I mainly wrote in C/C++.'
+    description: 'Responsible for the development and production of all high tech products (traffic cameras, license plate readers, etc.). I mainly wrote in C/C++.',
+    style: '',
   },
   hostway: {
     company: 'Hostway Ltd.',
@@ -99,24 +109,34 @@ const exp = {
     logo: 'https://hostway.com/wp-content/uploads/Hostway-HomeButton-3.png',
     jobTitle: 'Senior Sys Admin',
     description: 'Engineer and senior architect of Web servers and server clusters. Promoted main engineer in linux, and one of the 3 main engineers in Windows. I was responsible to maintain 200 linux servers and 100 virtual private servers, that contain 5,000 Web sites and support the email for 10,000 companies. All automation was done entirely with Python scripts.',
+    style: 'margin-bottom:0.5em;',
   },
   cwi: {
     start: '1999',
     finish: '2001',
     company: 'CWI Institute (Amsterdam)',
     description: 'PhD research (A.I.)',
+//    logo:  'https://www.amsterdamsciencepark.nl/fileadmin/_processed_/b/b/csm_CWI_ad56790100.png',
+//    style: 'padding:0px',
+    style: 'margin-bottom:-1.5em;',
   },
   leiden: {
     start: '1994',
     finish: '1998',
     company: 'Leiden University',
     description: 'MSc degree (Computer Science)',
+//    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Leiden_University_seal.svg/150px-Leiden_University_seal.svg.png',
+//    style: 'padding:0px',
+    style: 'margin-bottom:-1.5em;',
   },
   oxford: {
     start: '1998',
     finish: '1999',
     company: 'Oxford University (Oxford, England)',
     description:  'R&D engineer',
+//    logo: 'http://www.entireeducation.com/wp-content/uploads/2012/01/Oxford-University-Logo.png',
+//    style: 'padding-bottom:10px',
+    style: 'margin-bottom:-1.5em;',
     // description: 'Software Engineer. Low-level programming in Windows, DirectX, high-performance timing and graphics. Working on two scientific projects.',
   },
   twente: {
@@ -124,10 +144,11 @@ const exp = {
     finish: '1994',
     company: 'Twente University',
     description: 'Electronic Engineering',
+    style: 'margin-bottom:-1.5em;',
   },
 };
 
-const humanLang = 'I speak Dutch, English, Spanish, German, French, some Indonesian, and a little bit of sign language.';
+const humanLang = 'Having lived abroad and nomadically, I also learned to speak Dutch, English, Spanish, German, French, some Indonesian, and a little bit of sign language.';
 // const humanLang = [ {
 //   name: 'Dutch',
 //   flag: 'https://flags.fmcdn.net/data/flags/w580/nl.png',
@@ -148,10 +169,10 @@ const humanLang = 'I speak Dutch, English, Spanish, German, French, some Indones
 //   flag: 'https://flags.fmcdn.net/data/flags/w580/id.png',
 // } ];
 
-const progLang = 'Over the past 25 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Ruby, JavaScript, and Go.';
+const progLang = 'Over the past 25 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Python, Ruby, JavaScript, and Go.';
 
-const hobbies = 'In my spare time, I love playing Chopin on the piano, squash with friends, or hide-and-seek with my one-year-old son!';
-const details = {
+const hobbies = 'I now live in Utrecht, and in my spare time I love playing Chopin on the piano, squash with friends, or peekaboo with our one-year-old son!';
+const details = {	
   fullName: 'Michiel Bertus de Jong',
   born: '21/07/1975, The Netherlands',
   website: 'https://michielbdejong.com',
