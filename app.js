@@ -271,28 +271,38 @@ if (hashParts[0]=='#focus') {
 
 // explicit page breaks for pdf printing:
 if (focusName == 'backend') {
-  vueData.backend.sections[0].exps[0].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[0].exps[1].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[0].exps[2].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[0].exps[3].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[0].exps[4].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[0].exps[5].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[0].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[1].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[2].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[3].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[4].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[5].style = 'margin-bottom:1.6em;';
   
-  vueData.backend.sections[1].exps[0].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[1].exps[1].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[1].exps[2].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[1].exps[3].style = 'margin-bottom:1.6em;';
-  vueData.backend.sections[1].exps[4].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[0].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[1].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[2].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[3].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[4].style = 'margin-bottom:1.6em;';
   
   vueData.backend.sections[2].exps[2].style = 'margin-bottom:-4em;';
 } else if (focusName == 'cloud') {
-  vueData.backend.sections[0].exps[0].style = '';
-  vueData.backend.sections[0].exps[1].style = '';
-  vueData.backend.sections[0].exps[2].style = '';
-  vueData.backend.sections[0].exps[3].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[0].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[1].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[2].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[0].exps[3].style = 'margin-bottom:1.6em;';
 
-  vueData.backend.sections[1].exps[0].style = '';
-  vueData.backend.sections[1].exps[1].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[0].style = 'margin-bottom:1.6em;';
+  vueData[focusName].sections[1].exps[1].style = 'margin-bottom:1.6em;';
+} else if (focusName == 'development') {
+  vueData[focusName].sections[0].exps[0].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[1].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[2].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[3].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[4].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[5].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[6].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[7].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[8].style = 'margin-bottom:0.5em;';
 }
 
 const app = new Vue({
