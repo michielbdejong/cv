@@ -288,6 +288,9 @@ if (focusName == 'backend') {
   vueData[focusName].sections[1].exps[4].style = 'margin-bottom:1.6em;';
   
   vueData.backend.sections[2].exps[2].style = 'margin-bottom:-4em;';
+
+
+  vueData[focusName].sections[0].exps[0].description += ' Data was sharded across MySQL clusters with large Memcache farms in front.';
 } else if (focusName == 'cloud') {
   vueData[focusName].sections[0].exps[0].style = 'margin-bottom:1.6em;';
   vueData[focusName].sections[0].exps[1].style = 'margin-bottom:1.6em;';
