@@ -115,6 +115,7 @@ const exp = {
     start: '1999',
     finish: '2001',
     company: 'CWI Institute (Amsterdam)',
+    href: 'https://www.cwi.nl',
     description: 'PhD research (A.I.)',
 //    logo:  'https://www.amsterdamsciencepark.nl/fileadmin/_processed_/b/b/csm_CWI_ad56790100.png',
 //    style: 'padding:0px',
@@ -124,6 +125,7 @@ const exp = {
     start: '1994',
     finish: '1998',
     company: 'Leiden University',
+    href: 'https://www.universiteitleiden.nl/en',
     description: 'MSc degree (Computer Science)',
 //    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Leiden_University_seal.svg/150px-Leiden_University_seal.svg.png',
 //    style: 'padding:0px',
@@ -133,6 +135,7 @@ const exp = {
     start: '1998',
     finish: '1999',
     company: 'Oxford University (Oxford, England)',
+    href: 'http://www.ox.ac.uk',
     description:  'R&D engineer',
 //    logo: 'http://www.entireeducation.com/wp-content/uploads/2012/01/Oxford-University-Logo.png',
 //    style: 'padding-bottom:10px',
@@ -248,7 +251,7 @@ const vueData = {
     sections: [
       {
         section: 'Software Development, Internet Technology, Open Source',
-        exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.indiehosters, exp.tosdr, exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
+        exps: [ exp.ripple, exp.mozilla, exp.ledgerloops, exp.indiehosters, exp.tosdr, exp.unhosted, exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
       }, {
         section: 'Academic, Computer Science and Artificial Intelligence',
         exps: [ exp.cwi, exp.oxford, exp.leiden ],
