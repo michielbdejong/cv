@@ -259,7 +259,7 @@ const vueData = {
     ],
     details,
     humanLang,
-    progLang,
+    progLang: 'Over the past 25 years, my programming language of choice has slowly shifted from Pascal/Delphi, C/C++/C#, Java, PHP, Python, and JavaScript to Ruby.',
     hobbies,
   },
 };
