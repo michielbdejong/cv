@@ -316,6 +316,20 @@ if (focusName == 'backend') {
   vueData[focusName].sections[0].exps[8].style = 'margin-bottom:0.5em;';
 } else if (focusName == 'protocols') {
   vueData[focusName].sections[0].exps[0].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[1].exps[0].style = 'margin-bottom:0.5em;';
+
+  vueData[focusName].sections[0].exps[1].style = 'margin-bottom:0.5em;';
+
+  vueData[focusName].sections[3].exps[1].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[3].exps[3].style = 'margin-bottom:-1em;';
+
+  vueData[focusName].sections[0].exps[2].logoStyle = 'margin-top:0.5em;';
+  vueData[focusName].sections[1].exps[2].logoStyle = 'margin-top:0.5em;';
+
+  vueData[focusName].sections[3].exps[1].logoStyle = 'margin-top:0.5em;';
+  vueData[focusName].sections[3].exps[3].logoStyle = 'margin-top:0.5em;';
+  vueData[focusName].sections[3].exps[4].logoStyle = 'margin-top:1em;';
+
   vueData[focusName].sections[0].exps[0].description += ' Research on Sharded Consensus.';
 }
 

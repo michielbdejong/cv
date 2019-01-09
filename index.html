@@ -41,12 +41,12 @@
           <div class="level" style="margin-top:0.5em;">
             <h1 class="title">{{ sec.section }}</p>
           </div>
-          <div class="container">
+          <div class="container" style="margin-left:0.5em;">
             <div v-for="exp in sec.exps" v-bind="exp">
               <div class="media" v-bind:style="exp.style">
                  <figure class="media-left">
                    <p class="image is-64x64">
-                     <img v-bind:src="exp.logo">
+                     <img v-bind:src="exp.logo" v-bind:style="exp.logoStyle">
                    </p>
                  </figure>
                  <div class="media-content has-text-justified">
