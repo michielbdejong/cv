@@ -151,7 +151,7 @@ const exp = {
   },
 };
 
-const humanLang = 'Having lived abroad and nomadically, I also learned to speak Dutch, English, Spanish, German, French, some Indonesian, and a little bit of sign language.';
+const humanLang = 'Having lived abroad and nomadically, I also learned to speak Dutch, English, Spanish, German, French, and Indonesian.';
 // const humanLang = [ {
 //   name: 'Dutch',
 //   flag: 'https://flags.fmcdn.net/data/flags/w580/nl.png',
@@ -172,9 +172,9 @@ const humanLang = 'Having lived abroad and nomadically, I also learned to speak 
 //   flag: 'https://flags.fmcdn.net/data/flags/w580/id.png',
 // } ];
 
-const progLang = 'Over the past 25 years, my favourite programming language has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Python, Ruby, JavaScript, and Go.';
+const progLang = 'Over the past 25 years, my programming language of choice has slowly shifted across Pascal/Delphi, C/C++/C#, Java, PHP, Python, Ruby, JavaScript, and more.';
 
-const hobbies = 'I now live in Utrecht, and in my spare time I love playing Chopin on the piano, squash with friends, or peekaboo with our one-year-old son!';
+const hobbies = 'I now live in Utrecht, and in my spare time I love playing Chopin on the piano, meeting friends for squash and beers, or playing peekaboo with our one-year-old son!';
 const details = {	
   fullName: 'Michiel Bertus de Jong',
   born: '21/07/1975, The Netherlands',
@@ -289,7 +289,6 @@ if (focusName == 'backend') {
   
   vueData.backend.sections[2].exps[2].style = 'margin-bottom:-4em;';
 
-
   vueData[focusName].sections[0].exps[0].description += ' Data was sharded across MySQL clusters with large Memcache farms in front.';
 } else if (focusName == 'cloud') {
   vueData[focusName].sections[0].exps[0].style = 'margin-bottom:0.5em;';
@@ -315,6 +314,9 @@ if (focusName == 'backend') {
   vueData[focusName].sections[0].exps[6].style = 'margin-bottom:0.5em;';
   vueData[focusName].sections[0].exps[7].style = 'margin-bottom:0.5em;';
   vueData[focusName].sections[0].exps[8].style = 'margin-bottom:0.5em;';
+} else if (focusName == 'protocols') {
+  vueData[focusName].sections[0].exps[0].style = 'margin-bottom:0.5em;';
+  vueData[focusName].sections[0].exps[0].description += ' Research on Sharded Consensus.';
 }
 
 const app = new Vue({
