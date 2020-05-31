@@ -4,7 +4,7 @@ const exp = {
     project: 'Interledger',
     jobTitle: 'Software Engineer',
     href: 'https://ripple.com',
-    logo: 'https://pbs.twimg.com/profile_images/879392946730094592/IwNebNtK_400x400.jpg',
+    logo: 'https://pbs.twimg.com/profile_images/1145735321738285056/s2UgYxUZ_400x400.jpg',
     description: 'Helped define and implement the <a href="https://interledger.org">Interledger</a> protocol for the Internet of Value. We had many detailed discussions about the protocol specs and I took up product and release management of the research team\'s flagship product, ILP-KIT (NodeJS).',
     start: 'Feb 2017',
     finish: 'Nov 2018',
