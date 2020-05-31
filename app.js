@@ -1,4 +1,15 @@
 const exp = {
+  inrupt: {
+    company: 'Inrupt',
+    project: 'Solid',
+    jobTitle: 'Software Engineer',
+    href: 'https://inrupt.com',
+    logo: 'https://pbs.twimg.com/profile_images/1039264291851890689/J4uXH3r8_400x400.jpg',
+    description: 'Worked directly with Sir Tim Berners-Lee on MashLib and Solid-UI, rewrote the Solid personal data server in Node.js + TypeScript, and started the Solid Apps Team which I\'ll now be continuing independently from Inrupt.',
+    start: 'Mar 2019',
+    finish: 'Jun 2020',
+    style: '',
+  },
   ripple: {
     company: 'Ripple',
     project: 'Interledger',
@@ -13,7 +24,7 @@ const exp = {
   ledgerloops: {
     company: 'LedgerLoops',
     start: 'Oct 2016',
-    finish: 'Dec 2018',
+    finish: 'present',
     href: 'https://ledgerloops.com',
     logo: 'https://pbs.twimg.com/profile_images/792930018171039744/niPr0qoi_400x400.jpg',
     description: 'LedgerLoops is an alternative to money, based around a novel concept: cryptographically triggered IOUs. The website (ledgerloops.com) introduces the "Whispering Merchants" problem as an abstraction of trade flows in the real world. It explains how LedgerLoops is a more decentralized solution than money, requiring everybody only to trust their immediate economic neighbors. The whitepaper defines the LedgerLoops protocol, and an implementation in Node.js is currently in the making.',
@@ -52,7 +63,7 @@ const exp = {
   },
   unhosted: {
     start: 'Sep 2010',
-    finish: 'Sep 2014',
+    finish: 'present',
     company: 'Unhosted',
     project: 'remoteStorage',
     jobTitle: 'Founder and Lead',
@@ -183,6 +194,28 @@ const details = {
 };
 
 const vueData = {
+  pointer: {
+    blurb: 'Deep understanding of internet technology and protocol design. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
+    sections: [
+      {
+        section: 'Bottom-up Internet Architecture Projects',
+        exps: [ exp.unhosted, exp.tosdr, exp.indiehosters, exp.ledgerloops ],
+      }, {
+        section: 'Employment at Internet Architecture SMEs',
+        exps: [ exp.mozilla, exp.ripple, exp.inrupt ],
+      }, {
+        section: 'Academic (CS/AI)',
+        exps: [ exp.cwi, exp.oxford, exp.leiden ],
+      }, {
+        section: 'Other',
+        exps: [ exp.tuenti, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
+      }
+    ],
+    details,
+    humanLang,
+    progLang,
+    hobbies,
+  },
   protocols: {
     blurb: 'Deep understanding of internet technology and protocol design. Critical thinker. Many years of experience developing decentralized, peer-to-peer and scalable solutions to complex problems.',
     sections: [
