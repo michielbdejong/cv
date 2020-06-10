@@ -69,7 +69,7 @@ const exp = {
     jobTitle: 'Founder and Lead',
     href: 'https://unhosted.org',
     logo: 'https://pbs.twimg.com/profile_images/1571295852/unhosted-logo_400x400.png',
-    description: 'Wrote the "<a href="https://unhosted.org">Unhosted Web Apps</a>" book, led the <a href="https://datatracker.ietf.org/doc/draft-dejong-remotestorage/">remoteStorage Internet Draft</a> at IETF, and the <a href="https://github.com/remotestorage/remotestorage.js">remotestorage.js library</a>. Highly visible in the web tech community, and awarded several funding grants.',
+    description: 'Wrote the "<a href="https://unhosted.org">Unhosted Web Apps</a>" book, led the <a href="https://datatracker.ietf.org/doc/draft-dejong-remotestorage/">remoteStorage Internet Draft</a> at IETF, and the <a href="https://github.com/remotestorage/remotestorage.js">remotestorage.js library</a>. Highly visible in the web tech community, and awarded many funding grants.',
     style: '',
   },
   tuenti: {
@@ -221,7 +221,7 @@ const vueData = {
     sections: [
       {
         section: 'Decentralized Protocol Design',
-        exps: [ exp.ripple, exp.unhosted, exp.ledgerloops ],
+        exps: [ exp.inrupt, exp.ripple, exp.unhosted, exp.ledgerloops ],
       }, {
         section: 'Rethinking the Internet',
         exps: [ exp.mozilla, exp.indiehosters, exp.tosdr ],
@@ -243,7 +243,7 @@ const vueData = {
     sections: [
       {
         section: 'Decentralized Internet',
-        exps: [ exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
+        exps: [ exp.inrupt, exp.unhosted, exp.mozilla, exp.tosdr, exp.indiehosters ],
       }, {
         section: 'PHP Development',
         exps: [ exp.tuenti, exp.hostway ],
@@ -268,7 +268,7 @@ const vueData = {
         exps: [ exp.tuenti, exp.indiehosters, exp.kibitech, exp.bytech, exp.teva, exp.hostway ],
       }, {
         section: 'Open Source and Internet Revolution',
-        exps: [ exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.tosdr ],
+        exps: [ exp.inrupt, exp.ripple, exp.mozilla, exp.unhosted, exp.ledgerloops, exp.tosdr ],
       }, {
         section: 'Computer Science and Artificial Intelligence',
         exps: [ exp.cwi, exp.oxford, exp.leiden ],
@@ -393,7 +393,7 @@ if (focusName == 'backend') {
   vueData[focusName].sections[3].exps[3].logoStyle = 'margin-top:0.5em;';
   vueData[focusName].sections[3].exps[4].logoStyle = 'margin-top:1em;';
 
-  vueData[focusName].sections[0].exps[0].description += ' Research on Sharded Consensus.';
+  vueData[focusName].sections[0].exps[1].description += ' Research on Sharded Consensus.';
 }
 
 const app = new Vue({
